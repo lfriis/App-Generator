@@ -15,6 +15,24 @@ cd $app_name
 echo
 echo "${CYAN}Directories created..."
 
+cd scripts
+touch themesCheck.js
+
+cat > themesCheck.js <<EOF
+var themeCheck = document.body.id;
+
+if (themeCheck === 'uf-hub-page' || themeCheck === 'uf-stream-page' || themeCheck === 'uf-item-page') {
+
+console.log("Tv2 Hub");
+
+} else {
+    console.log("Tv1" Hub");
+}
+EOF
+
+echo "Scripts populated..."
+
+cd ..
 touch manifest.json
 cat > manifest.json <<EOF
 { 
