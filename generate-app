@@ -1,12 +1,14 @@
 #!/bin/bash
 
 GREEN="`tput setaf 2`"
-NORM="`tput sgr0`"
+YELLOW="`tput setaf 3`"
+MAGENTA="`tput setaf 5`"
 CYAN="`tput setaf 6`"
+WHITE="`tput setaf 7`"
 
 echo " "
-echo "${GREEN}Enter App Name"
-echo ">"
+echo "${WHITE}Enter App Name"
+echo "${YELLOW}>"
 read app_name
 
 mkdir -p $app_name/{images,scripts}
@@ -67,11 +69,13 @@ EOF
 echo "Manifest populated..."
 echo " "
 
-echo "${GREEN}Enter git repository URL for initial commit "
-echo ">"
+echo "${WHITE}Enter git repository URL for initial commit "
+echo "${YELLOW}>"
 read git_url
+echo " "
 
 touch README.md
+echo "${CYAN}README.md created...${MAGENTA}"
 
 git init
 git add .
@@ -81,4 +85,6 @@ git push -u origin master
 
 echo " "
 echo "${CYAN}Changes pushed..."
-echo "Happy developing :)"
+echo " "
+echo "${GREEN}Happy developing (<>..<>)"
+echo " "
