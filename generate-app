@@ -29,7 +29,7 @@ if (themeCheck === 'uf-hub-page' || themeCheck === 'uf-stream-page' || themeChec
 } else {
 
     //Input Tv1 code
-    console.log("Tv1" Hub");
+    console.log("Tv1 Hub");
 
 }
 EOF
