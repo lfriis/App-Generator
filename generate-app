@@ -19,17 +19,17 @@ cd scripts
 touch themesCheck.js
 
 cat > themesCheck.js <<EOF
-var themeCheck = document.body.id;
+var var themeCheck = document.body.dataset.domainTheme;
 
-if (themeCheck === 'uf-hub-page' || themeCheck === 'uf-stream-page' || themeCheck === 'uf-item-page') {
-
-    //Input Tv2 code
-    console.log("Tv2 Hub");
-
-} else {
+if (themeCheck === undefined) {
 
     //Input Tv1 code
     console.log("Tv1 Hub");
+
+} else {
+
+    //Input Tv2 code
+    console.log("Tv2 Hub");
 
 }
 EOF
