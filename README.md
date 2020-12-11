@@ -1,6 +1,4 @@
-# :white_square_button: App-Generator
-
-[NPM Package](https://www.npmjs.com/package/uf-app-generator)
+# :white_square_button: [uf-app-generator](https://www.npmjs.com/package/uf-app-generator)
 
 > It will perform the initial commit to GitHub and build the _README.md_ as seem below:
 
